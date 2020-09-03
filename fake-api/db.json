@@ -1,0 +1,12 @@
+{
+    "users": [
+        {"id": 0, "name": "admin", "password": "qwerty"},
+        {"id": 1, "name": "user", "password": "password"}
+    ],
+    "contacts": [
+        {"id": 0, "name": "Alexey", "phone": "89612451155"},
+        {"id": 1, "name": "Sergey", "phone": "89521245511"},
+        {"id": 2, "name": "Milana", "phone": "89212312151"},
+        {"id": 3, "name": "Viktor", "phone": "89121154244"}
+    ]
+}
