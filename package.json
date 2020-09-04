@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fake-api": "json-server fake-api/generate.js",
+    "fake-api": "json-server fake-api/generate.js --port 3001",
     "start": "webpack-dev-server --mode development --hot --port 3000"
   },
   "keywords": [],

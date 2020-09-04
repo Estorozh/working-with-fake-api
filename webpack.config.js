@@ -6,7 +6,11 @@ module.exports = {
     devtool: 'inline-source-map',
     resolve: {
         extensions: ['.js', '.jsx', '.json'],
-        alias: {'@': path.resolve(__dirname, 'src/components')}
+        alias: {
+            '@': path.resolve(__dirname, 'src/components'),
+            '@auth': path.resolve(__dirname, 'src/components/Auth'),
+            '@dashboard': path.resolve(__dirname, 'src/components/Dashboard')
+        }
     },
     output: {
         path: path.join(__dirname,'/dist'),

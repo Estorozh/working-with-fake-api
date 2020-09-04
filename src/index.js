@@ -1,11 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-// import App from '@/App.jsx'
+import { Provider } from 'react-redux'
 import Auth from '@/Auth/Auth'
 import Dashboard from '@/Dashboard/Dashboard'
+import store from './store'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 let app = (
+    <Provider store={store}>
     <BrowserRouter>
     <Switch>
         <Route exact path="/" component={Auth} />
@@ -13,5 +15,6 @@ let app = (
         <Redirect to="/" />
     </Switch>
     </BrowserRouter>
+    </Provider>
 )
 render(app, document.getElementById('root'));
